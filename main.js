@@ -984,9 +984,7 @@ function CreateSharing(command, link){
         if (!('path' in params_set)){
             params_set.path = link;
         }
-        if (!('password' in params_set)){
-            params_set.password = '';
-        }
+        
         send('fs', 'createSharing', params_set, (res) => {
             if (res){
                 CreateSharings(res);
