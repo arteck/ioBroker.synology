@@ -1547,7 +1547,7 @@ function newSyno(){
             host:                    adapter.config.host || '127.0.0.1',
             port:                    adapter.config.port || '5000',
             account:                 adapter.config.login || 'admin',
-            passwd:                  adapter.config.password || '',
+            passwd:                  adapter.config.password,
             protocol:                adapter.config.https ? 'https' :'http',
             apiVersion:              apiVersion,
             otp:                     adapter.config['twofa_checkbox'] ? (adapter.config['twofa_code'] || 'ASE32YJSBKUOIDPB') :false,
